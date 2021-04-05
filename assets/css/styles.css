@@ -286,20 +286,23 @@ main .linha .carrossel{
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-image: url("https://patezsidney.github.io/kidelicia/assets/img/bolo_coracao_1.jpg");
-    background-size: 100vw;
-    background-attachment: fixed;
+    position: relative;
+
 }
 main .linha .carrossel .destaque-carrossel{
-    display: flex;
-    flex-direction: column;
+    position: absolute;
     width: 100%;
     height: 100%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.300);
+    
+}
+main .linha .carrossel .destaque-carrossel div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 main .linha .carrossel .destaque-carrossel p{
     font-size: 3rem;
@@ -311,15 +314,22 @@ main .linha .carrossel .destaque-carrossel hr{
     width: 20%;
     margin: 1.5rem 0;
 }
-main .linha .carrossel .destaque-carrossel ul{
-    
-}
-main .linha .carrossel ul li{
-    
-}
-main .linha .carrossel ul li img{
+
+main .linha .carrossel .imagens-slider{
+    position: absolute;
     width: 100vw;
-    display: none;
+    height: 100vh;
+}
+main .linha .carrossel .imagens-slider img{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1000ms;
+}
+main .linha .carrossel .imagens-slider img.selecionada{
+    opacity: 1;
 }
 /* ANIMAÇÕES */
 
