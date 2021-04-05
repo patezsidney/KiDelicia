@@ -13,7 +13,7 @@ cor do fundo padrão: #FFFFFF */
     --cor-texto-destaque: #FEFFF7;
     --cor-destaque: #C6995E;
     --fonte-padrao: 'Lato', sans-serif;
-    --imagem-carrossel: url(/assets/img/bolo_coracao_1.jpg)
+    --imagem-carrossel: url("./assets/img/bolo_coracao_1.jpg")
 }
 
 /* GERAL */
@@ -33,7 +33,7 @@ body{
 header{
     height: 100vh;
     width: 100vw;
-    background-image: url("/assets/img/paes.jpg");
+    background-image: url("./assets/img/paes.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -287,7 +287,7 @@ main .linha .carrossel{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/img/bolo_coracao_1.jpg);
+    background-image: url("./assets/img/bolo_coracao_1.jpg");
     background-size: 100vw;
     background-attachment: fixed;
 }
