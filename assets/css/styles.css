@@ -1,0 +1,326 @@
+/* Fonte padrão: font-family: 'Lato', sans-serif;
+cor principal: #C6995E
+cor do texto de destaque: #FEFFF7
+cor do texto padrão: #000000
+cor do fundo padrão: #FFFFFF */
+
+
+
+/* VARIAVEIS */
+:root{
+    --cor-fundo-padrao: #ffffff;
+    --cor-testo-padrao: #000000;
+    --cor-texto-destaque: #FEFFF7;
+    --cor-destaque: #C6995E;
+    --fonte-padrao: 'Lato', sans-serif;
+    --imagem-carrossel: url(/assets/img/bolo_coracao_1.jpg)
+}
+
+/* GERAL */
+body, header, main, footer, section, input, textarea, div, img, figure, figcaption, h1, h2, h3, h4, h5, h5, p, nav, ul, li, a, hr, table, tr, td{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+} 
+
+body{
+    font-family: var(--fonte-padrao);
+}
+
+/* HEADER */
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/img/paes.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100vw;
+    background-color: #C6995E;
+}
+header .linha{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(198 153 94 / 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+    
+}
+
+header .container{
+    display: flex;
+    width: 1280px;
+    min-width: 80vw;
+    justify-content: space-around;
+    padding: 0 4rem;
+    
+}
+header .coluna{}
+header .coluna-esquerda{
+    width: 60%;
+}
+header .coluna-esquerda figure{}
+header .coluna-esquerda figure img{
+    width: 600px;
+}
+header .coluna-esquerda figure figcaption{
+    display: none;
+}
+header .coluna-direita{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .coluna-direita h2{
+    color: var(--cor-texto-destaque);
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+header .coluna-direita hr{
+    border:1px solid var(--cor-texto-destaque);
+    width: 10rem;
+}
+header .coluna-direita nav{
+    
+    
+}
+header .coluna-direita nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3rem 0;
+    justify-content: center;
+}
+header .coluna-direita nav ul li{
+    background-color: var(--cor-destaque);
+    border-radius: 100%;
+    padding: 0.8rem;
+    border: 1px solid #000;
+    margin: 0 1.5rem;
+}
+header .coluna-direita nav ul li a{}
+header .coluna-direita nav ul li a img{
+    width: 2.5rem;
+    height: 2.5rem; 
+}
+header .coluna-direita p{
+    color: var(--cor-texto-destaque);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+header .coluna-direita .divisor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .coluna-direita .divisor hr{
+    
+    width: 3.5rem;
+    height: 1px;
+    margin: 0 1rem;
+}
+header .coluna-direita .divisor a{}
+header .coluna-direita .divisor a img{
+    width: 1.5rem;
+    color: white;
+}
+header .desenvolvedor{
+    
+}
+header .desenvolvedor a{}
+header .desenvolvedor a img{
+    width: 300px;
+    
+}
+
+/* FOOTER */
+footer{
+    width: 100vw;
+}
+footer .linha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .linha .container{
+    
+}
+footer .linha .container{}
+footer .linha .container .mapa{
+    width: 100vw;
+    height: 70vh;
+}
+footer .linha .container .endereco{
+    text-align: center;
+    padding: 2rem 0;
+}
+footer .linha .container .endereco h2{
+    font-size: 1.2rem;
+}
+footer .linha .container .endereco h3{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+footer .linha .container .endereco p{}
+footer .rodape{
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer .rodape a{
+    padding: 1.5rem 0;
+}
+footer .rodape a img{
+    width: 200px;
+}
+
+/* MAIN */
+main{}
+main .linha{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .linha .container{
+    width: 1280px;
+    min-width: 85vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+main .linha .container hr{
+    margin: 3rem 0;
+    height: 1px;
+    width: 100%;
+}
+main .linha .container section{
+    display: grid;
+    width: 100%;
+    grid-column: 49% 49%;
+    align-items: center;
+    grid-gap: 10px;
+    justify-content: space-around;
+}
+main .linha .container #pao{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+main .linha .container section h2{
+    font-size: 3vw;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+main .linha .container section p{
+    margin-top: 1rem;
+}
+
+main .linha .container section .coluna-esquerda{
+    padding-top: 1.5rem;
+    text-align: center;
+    
+}
+main .linha .container section .coluna-esquerda h3{
+    font-size: 2rem;
+}
+main .linha .container section .coluna-esquerda table{
+    border-collapse: collapse;
+    text-align: start;
+}
+main .linha .container section .coluna-esquerda table tr{}
+main .linha .container section .coluna-esquerda table tr td{
+    border-bottom: 1px solid #000;
+    padding-top: 1rem;
+    padding-bottom: 1px;
+}
+main .linha .container section .coluna-esquerda table tr td hr{
+    margin: 0;
+    width: 20rem;
+    border: none;
+}
+main .linha .container section .coluna-direita{
+    padding-top: 1.5rem;
+    text-align: center;
+}
+main .linha .container section .coluna-direita h3{
+    font-size: 2rem;
+}
+main .linha .container section .coluna-direita p{
+    margin: 1.5rem;
+    text-align: center;
+    font-weight: normal;
+}
+main .linha .container section .coluna-direita table{
+    border-collapse: collapse;
+    text-align: start;
+}
+main .linha .container section .coluna-direita table tr{
+    
+}
+main .linha .container section .coluna-direita table tr td{
+    border-bottom: 1px solid #000;
+    padding-top: 1rem;
+    padding-bottom: 1px;
+}
+main .linha .container section .coluna-direita table tr td hr{
+    margin: 0;
+    width: 20rem;
+    border: none;
+}
+main .linha .carrossel{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/img/bolo_coracao_1.jpg);
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+main .linha .carrossel .destaque-carrossel{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.300);
+}
+main .linha .carrossel .destaque-carrossel p{
+    font-size: 3rem;
+    color: var(--cor-texto-destaque);
+    font-weight: bold;
+}
+main .linha .carrossel .destaque-carrossel hr{
+    border: 1px solid var(--cor-texto-destaque);
+    width: 20%;
+    margin: 1.5rem 0;
+}
+main .linha .carrossel .destaque-carrossel ul{
+    
+}
+main .linha .carrossel ul li{
+    
+}
+main .linha .carrossel ul li img{
+    width: 100vw;
+    display: none;
+}
+/* ANIMAÇÕES */
+
+/* MEDIA */
