@@ -1,0 +1,17 @@
+@media (min-width: 700px) {
+  /* HEADER */
+  header .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* MAIN */
+  main .linha .container section {
+    display: grid;
+    width: 100%;
+    grid-column: 49% 49%;
+    align-items: center;
+    grid-gap: 10px;
+    justify-content: space-around;
+  }
+}
